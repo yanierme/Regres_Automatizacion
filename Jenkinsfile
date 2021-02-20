@@ -3,13 +3,12 @@ pipeline {
     stages {
         stage("Compilar") {
             steps {
-                sh "./gradlew compileJava"
+
+              if (isUnix()) --> sh "./gradlew compileJava"
+                 else --> bat "./gradlew compileJava"
+
             }
         }
-        stage("Probar") {
-            steps {
-                sh "./gradlew test"
-            }
-        }
+
     }
 }
