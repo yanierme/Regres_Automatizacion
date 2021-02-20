@@ -3,9 +3,7 @@ pipeline {
     stages {
         stage("Compilar") {
             steps {
-
-              if (isUnix()) --> sh "./gradlew compileJava"
-                 else --> bat "./gradlew compileJava"
+               sh "./gradlew compileJava"
 
             }
         }
