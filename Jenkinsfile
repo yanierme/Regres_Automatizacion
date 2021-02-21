@@ -3,8 +3,11 @@ pipeline {
     stages {
         stage("Compilar") {
             steps {
-                 echo 'RPEUBAS JENKINSFILE'
+               echo 'segunda prueba '
+               sh '''
+                   "./gradlew compileJava"
 
+                '''
             }
         }
 
