@@ -4,10 +4,9 @@ pipeline {
         stage("Compilar") {
             steps {
                echo 'segunda prueba '
-               sh '''
-                   "./gradlew compileJava"
+               sh "./gradlew compileJava"
 
-                '''
+
             }
         }
 
