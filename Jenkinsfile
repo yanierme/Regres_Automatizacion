@@ -8,11 +8,7 @@ pipeline {
 
             }
         }
-        post {
-            success {
-              mail to: yanierme@gmail.com, subject: ‘The Pipeline success :)‘
-            }
-          }
+       
 
     }
 }
