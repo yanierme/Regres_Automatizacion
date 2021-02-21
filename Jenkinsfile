@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage("Compilar") {
             steps {
-               echo 'Ejecucion de prufffeba'
+               echo 'Verificar ejecucion automatica'
                sh "./gradlew clean build -x test"
 
 
