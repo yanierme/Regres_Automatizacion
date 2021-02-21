@@ -4,7 +4,7 @@ pipeline {
         stage("Clonar Repositorio") {
                     steps {
                        echo 'Stage para clonar proyecto de GitHub'
-                       git poll: true, url: 'git@github.com:yanierme/Regres_Automatizacion.git'
+                       git: 'https://github.com/yanierme/Regres_Automatizacion.git'
                     }
                 }
         stage("Compilar") {
