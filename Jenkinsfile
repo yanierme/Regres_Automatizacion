@@ -6,26 +6,17 @@ pipeline {
         jdk 'jdk8'
     }
 
-    options {
-    	buildDiscarder(logRotator(numToKeepStr: '5'))
-    }
-
-    environment {
-        groupId = readMavenPom().getGroupId()
-	    artifactId = readMavenPom().getArtifactId()
-	    version = readMavenPom().getVersion()
-    }
-
     stages {
 
-        stage ('Initialize') {
+        stages {
+                stage("Compilar test") {
                     steps {
-                        sh '''
-                            echo "yanier"
-                            echo "mestra"
-                        '''
+                       echo 'Ejecucion automaticadddd'
+                       sh "./gradlew clean build -x test"
+
                     }
                 }
 
-        }
+
+            }
     }
