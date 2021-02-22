@@ -11,4 +11,11 @@ pipeline {
 
 
     }
+       post {
+            always {
+                mail to: 'yanierme@gmail.com',
+                subject: "Pruebas de notificacion",
+                body: "Se termino la compilacion"
+            }
+        }
 }
