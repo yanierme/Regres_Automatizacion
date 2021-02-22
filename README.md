@@ -21,3 +21,9 @@ Estas evidencias que alojada en la siguiente ruta
 ruta_del_usuario\Regres_Automatizacion\target\site\serenity
 ```
 
+
+####Nota:
+Las  evidencias de la ejecución del proyecto en Jenkins se 
+encutran en la carpeta 
+"Evidencia Jenkins", adjunta a 
+la raiz del proyecto.
