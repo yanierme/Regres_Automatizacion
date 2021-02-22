@@ -16,7 +16,7 @@ Para ejecutar las pruebas y generar el informe de serenidad bdd
 ```
 gradlew test aggregate
 ```
-Estas evidencias que alojada en la siguiente ruta
+Estas evidencias que alojada en la siguiente ruta 
 ```
 ruta_del_usuario\Regres_Automatizacion\target\site\serenity
 ```
