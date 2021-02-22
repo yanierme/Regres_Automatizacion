@@ -6,12 +6,18 @@ La aplicación fue construida con las siguientes herramientas y lenguaje de progr
 * Gradle 4.10
 * Cucumber
 
-Para Compilar
+Para compilar la prueba se requiere de instalar Gradle en la maquina local de ejecución, una vez instalado, procedemos a abrir una sesión del CMD en 
+la raiz del proyecto y ejecutamos el siguiente comando.
 ```
-gradle clean build -x test
+gradlew clean build -x test
 ```
 
 Para ejecutar las pruebas y generar el informe de serenidad bdd
 ```
-gradle test aggregate
+gradlew test aggregate
 ```
+Estas evidencias que alojada en la siguiente ruta 
+```
+ruta_del_usuario\Regres_Automatizacion\target\site\serenity
+```
+
