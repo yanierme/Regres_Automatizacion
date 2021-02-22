@@ -14,7 +14,7 @@ pipeline {
        post {
             always {
                 mail to: 'yanierme@gmail.com',
-                subject: "Pruebas de notificacion",
+                subject: "Se completo el pipeline: ${currentBuild.fullDisplayName}",
                 body: "Se termino la compilacion"
             }
         }
